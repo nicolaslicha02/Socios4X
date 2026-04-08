@@ -1,0 +1,20 @@
+# Dependencias de Node 
+node_modules/
+
+# Archivos de compilación de Angular
+dist/
+out-tsc/
+bazel-out/
+
+# Caché del framework Angular
+.angular/
+
+# Logs de errores de consola
+npm-debug.log
+yarn-error.log
+*.log
+
+# Visual Studio / .NET 
+.vs/
+bin/
+obj/
