@@ -1,0 +1,70 @@
+/* Paleta por defecto (Light Mode) */
+:root {
+  --color-fondo-pagina: #f8f9fa;
+  --color-fondo-chat: #ffffff;
+  --color-burbuja-ia: #f8f9fa;
+  --color-burbuja-usuario: #2B2D42;
+  --color-texto-principal: #1f1f1f;
+  --color-texto-secundario: #6c757d;
+  --color-texto-burbuja-ia: #1f1f1f;
+  --color-texto-burbuja-usuario: #ffffff;
+  --color-bordes: rgba(0, 0, 0, 0.08);
+  --color-input-fondo: #ffffff;
+  --color-btn-send: #2B2D42;
+  --color-btn-texto: #ffffff;
+  --espaciado: 1.5rem;
+  --radio-bordes: 1.2rem;
+  --sombras: 0px 4px 10px rgba(0, 0, 0, 0.08);
+  --color-btn-hover-bg: rgba(43, 45, 66, 0.1);
+}
+
+/* Paleta al activar (Dark Mode) */
+body.dark-theme {
+  --color-fondo-pagina: #121212;
+  --color-fondo-chat: #1e1e1e;
+  --color-burbuja-ia: #2c2c2c;
+  --color-burbuja-usuario: #3a3f58;
+  --color-texto-principal: #f0f2f5;
+  --color-texto-secundario: #a0a0a0;
+  --color-texto-burbuja-ia: #f0f2f5;
+  --color-texto-burbuja-usuario: #ffffff;
+  --color-bordes: rgba(255, 255, 255, 0.05);
+  --color-input-fondo: #2c2c2c;
+  --color-btn-send: #ffffff;
+  --color-btn-texto: #1a1a1a;
+  --sombras: 0px 4px 15px rgba(0, 0, 0, 0.4);
+  --color-btn-hover-bg: rgba(255, 255, 255, 0.1);
+}
+
+/* Reseteo y buenas prácticas base */
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.6rem;
+  background-color: var(--color-fondo-pagina);
+  color: var(--color-texto-principal);
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Fix para que app-root no rompa el flex del body */
+app-root {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  width: 100%;
+  height: 100%;
+}
